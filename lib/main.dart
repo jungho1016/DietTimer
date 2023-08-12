@@ -24,7 +24,7 @@ void main() async {
         //   create: (context) => DietStaticsViewModel(),
         // ),
       ],
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }

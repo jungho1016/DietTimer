@@ -1,13 +1,13 @@
 import 'package:diettimer/core/component/diet_plan_calendar.dart';
 import 'package:diettimer/presentation/diet/diet_timer_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:table_calendar/table_calendar.dart';
 
 class DietSettingScreen extends StatefulWidget {
   final String selectedMethod;
   final DateTime startDate;
 
-  DietSettingScreen({required this.selectedMethod, required this.startDate});
+  const DietSettingScreen(
+      {super.key, required this.selectedMethod, required this.startDate});
 
   @override
   _DietSettingScreenState createState() => _DietSettingScreenState();
@@ -72,7 +72,7 @@ class _DietSettingScreenState extends State<DietSettingScreen> {
                     builder: (BuildContext context) {
                       return SizedBox(
                         height: 1000, // Adjust the height as needed
-                        child: DietPlanCalendar(startDate: widget.startDate),
+                        child: DietPlanCalendar(),
                       );
                     },
                   );
